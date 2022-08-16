@@ -1,2 +1,2 @@
-# web-projects
-HTML, CSS, JS
+# small web projects
+HTML, CSS & JS
