@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css" />
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+</head>
+<body>
+ <fieldset id="fieldset">
+ 
+ 
+   <a href="#">&laquo;</a>
+        <form id="rekisterointi-form">
+            
+          <p><label id="nimi-label">Nimi:</p>
+          <input type="text" name="name" id="nimi" placeholder=""
+           required="required"/></label>
+        
+           <p><label id="sposti-label">Sähköposti:</p>
+            <input type="email" name="email" id="sposti" placeholder=""
+            required="required"/></label>
+        
+            <p><label id="osoite-label">Osoite:</p>
+              <input type="text" name="osoite" id="osoite" placeholder=""
+              required="required"/></label>
+            
+            <p><label id="syntymaaika-label">Syntymäaika:</p>
+        <input type="date" id="syntymaaika" name="syntymaaika"
+              required="required"/></label>
+          
+            <p><label id="sukupuoli-label"> Sukupuoli:</p>
+              <select id="sukupuoli" name="sukupuoli">
+                <option value="Mies"> Mies</option>
+                  <option value="Nainen"> Nainen </option>
+                    <option value="Muu"> Muu</option>
+              </select></label>
+        
+              <label id="tiedot"><p>Miten sait tietää meistä?</p>
+              <textarea id="textarea" name="comments" placeholder=""></textarea></label>
+        
+              <label id="rekisteroidy"></label>      
+             <button id="rekisteroidy-button">Rekisteröidy</button>
+            
+        </fieldset>
+        </form>
+</body>
+</html>
