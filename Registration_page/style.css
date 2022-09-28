@@ -1,40 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Muli&display=swap');
 
-* {
-    box-sizing: border-box;
-}
-
 body {
     background-color: white;
     font-family: 'Muli', sans-serif;
     display: flex;
     flex-direction: column;
     text-align: center;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     height: auto;
-    margin: 0;
     
 } 
 
 #rekisterointi-form {
-  margin: 30px;
   width: 50%;
   border-radius: 10px;
+  border: 2px solid black;
   background-color: #f2f2f2;
   padding-bottom: 20px;
 }
-
-#fieldset{
-    display: flex;
-    justify-content: center;
-    margin: 0px;
-    padding-bottom: 0px;
-    width: 100%;
-    background-color: #ffffff;
-    border-radius: 0px;
-    border: transparent;
-  }
 
   a { 
   position: absolute;
@@ -52,8 +36,6 @@ body {
 a:hover {
   background-color: #4CAF50;
 }
-
-
 
 #nimi {
     margin-bottom: 15px;
