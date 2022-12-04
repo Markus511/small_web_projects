@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000000;
+    overflow: hidden;
+    margin: 0;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    height: 100vh;
+    padding: 10px;
+
+}
+
+.grid-item {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 3px rgba(0, 0, 0, 0.8) solid;
+    font-size: 20px;
+
+
+}
+
+.color1 {
+    background-color: rgb(255, 0, 0);
+    color: black;
+
+}
+
+.color2 {
+    background-color: white;
+    color: red;
+}
