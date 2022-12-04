@@ -1,23 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Muli&display=swap');
 
+* {
+  box-sizing: border-box;
+}
+
 body {
-    background-color: white;
+
+    background: white;
     font-family: 'Muli', sans-serif;
     display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
     align-items: center;
-    height: auto;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
     
 } 
 
 #rekisterointi-form {
+  text-align: center;
   width: 50%;
   border-radius: 10px;
   border: 2px solid black;
   background-color: #f2f2f2;
   padding-bottom: 20px;
+  padding-top: 20px;
 }
 
   a { 
