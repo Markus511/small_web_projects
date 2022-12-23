@@ -1,0 +1,113 @@
+body {
+  background: linear-gradient(178.6deg, rgb(49, 69, 87) 11.8%, rgb(124, 143, 161) 83.8%);
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 2em;
+}
+#setup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-weight: bold;
+
+}
+#value-container {
+  border: 3px solid;
+  padding: 1em;
+}
+
+#sub {
+  background: linear-gradient(178.6deg, rgb(107, 136, 161) 11.8%, rgb(124, 143, 161) 83.8%);
+  font-size: 1.5em;
+  height: 2em;
+  width: 2em;
+}
+#inc {
+  background: linear-gradient(178.6deg, rgb(107, 136, 161) 11.8%, rgb(124, 143, 161) 83.8%);
+  font-size: 1.5em;
+  height: 2em;
+  width: 2em;
+}
+#value {
+  padding: 1em;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+#ready {
+  background: linear-gradient(178.6deg, rgb(107, 136, 161) 11.8%, rgb(124, 143, 161) 83.8%);
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.checkedNum {
+  background-color: green;
+  color: #000000;
+}
+
+.visibleRandomNum {
+  color: rgb(255, 255, 255);
+}
+
+#selectNums {
+  text-align: center;
+  font-size: 1.5em;
+}
+
+#start-container {
+  text-align: center;
+  margin: 1em;
+  padding-bottom: 5em;
+}
+
+#start {
+  background: linear-gradient(178.6deg, rgb(107, 136, 161) 11.8%, rgb(124, 143, 161) 83.8%);
+  font-size: 1.5em;
+  font-weight: bold;
+  width: 4em;
+  height: 2em;
+  margin-bottom: 0.2em;
+  border: 1px solid rgb(0, 0, 0);
+}
+
+#again {
+  background: linear-gradient(178.6deg, rgb(107, 136, 161) 11.8%, rgb(124, 143, 161) 83.8%);
+  font-size: 1.5em;
+  font-weight: bold;
+  width: 4em;
+  height: 2em;
+  border: 1px solid rgb(0, 0, 0);
+}
+.active {
+  cursor: pointer;
+}
+
+.deactivate {
+  pointer-events: none !important;
+  touch-action: none; 
+}
+
+#grid-container {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: auto auto auto auto auto;
+  color: rgb(0, 0, 0);
+  margin: auto; 
+}
+
+#grid-container > div {
+  border: 1px solid rgb(0, 0, 0);
+  margin: 2px;
+  padding: 2px;
+  font-size: 30px;
+  text-align: center;
+}
+
+
+
