@@ -101,6 +101,7 @@ btnNums.addEventListener('click', () => {
             if (randomNumsArray.indexOf(randomNum) === -1) {
                 randomNumsArray.push(randomNum);
             }
+            console.log('randomnums array', randomNumsArray);
         }
         text.textContent = "The lottery is running...";
 
@@ -112,19 +113,19 @@ btnNums.addEventListener('click', () => {
         }, 7000)
 
         //show random numbers
-        let i = 0;
-        for (const item of items) {
-            item.classList.remove("active");
-            item.classList.add("deactivate");
-            const itemValue = Number(item.innerHTML);
-
-            if (randomNumsArray.includes(itemValue)) {
-                setTimeout(() => {
-                    item.classList.add('visibleRandomNum');
-                }, 1000 * i);
-                i++;
-
+        let delay = 1000;
+        for (const randomNum of randomNumsArray) {
+            for (const item of items) {
+                item.classList.remove("active");
+                item.classList.add("deactivate");
             }
+
+            setTimeout(() => {
+                // find the item with the same value as the current random number
+                const item = items.find(item => Number(item.innerHTML) === randomNum);
+                item.classList.add('visibleRandomNum');
+            }, delay);
+            delay += 1000;
         }
     })
 
